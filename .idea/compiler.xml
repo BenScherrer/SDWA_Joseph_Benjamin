@@ -2,18 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="commande" />
         <module name="demo" />
-        <module name="product" />
+        <module name="miniproj" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="commande" target="11" />
       <module name="demo" target="11" />
+      <module name="miniproj" target="11" />
       <module name="product" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -21,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="commande" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="miniproj" options="-parameters" />
       <module name="product" options="-parameters" />
     </option>
   </component>

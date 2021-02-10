@@ -5,16 +5,9 @@
       <list>
         <option value="$PROJECT_DIR$/Commerce/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-commande/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-produit/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="openjdk-15" project-jdk-type="JavaSDK" />
-    <option>
-        <list>
-        <option value="$PROJECT_DIR$/microservice-produit/pom.xml" />
-        <option value="$PROJECT_DIR$/microservice-commande/pom.xml" />
-        <option value="$PROJECT_DIR$/../clientui/pom.xml" />
-      </list>
-    </option>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

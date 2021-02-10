@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/SDWA_Jo_Ben.iml" filepath="$PROJECT_DIR$/.idea/SDWA_Jo_Ben.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-commande/commande.iml" filepath="$PROJECT_DIR$/microservice-commande/commande.iml" />
       <module fileurl="file://$PROJECT_DIR$/clientui/demo.iml" filepath="$PROJECT_DIR$/clientui/demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/microservice-produit/product.iml" filepath="$PROJECT_DIR$/microservice-produit/product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-produit/miniproj.iml" filepath="$PROJECT_DIR$/microservice-produit/miniproj.iml" />
     </modules>
   </component>
 </project>
