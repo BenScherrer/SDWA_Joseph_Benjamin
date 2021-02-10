@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SDWA_Jo_Ben.iml" filepath="$PROJECT_DIR$/.idea/SDWA_Jo_Ben.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-commande/commande.iml" filepath="$PROJECT_DIR$/microservice-commande/commande.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clientui/demo.iml" filepath="$PROJECT_DIR$/clientui/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-produit/product.iml" filepath="$PROJECT_DIR$/microservice-produit/product.iml" />
+    </modules>
+  </component>
+</project>

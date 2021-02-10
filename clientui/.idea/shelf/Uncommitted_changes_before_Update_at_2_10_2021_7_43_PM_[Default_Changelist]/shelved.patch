@@ -1,0 +1,71 @@
+Index: src/main/java/microservice/commerce/demo/controller/ControllerCommerce.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package microservice.commerce.demo.controller;\r\n\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.web.bind.annotation.GetMapping;\r\n\r\npublic class ControllerCommerce {\r\n\r\n    @Autowired\r\n    private ControllerCommerce controllercommerce;\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/microservice/commerce/demo/controller/ControllerCommerce.java b/src/main/java/microservice/commerce/demo/controller/ControllerCommerce.java
+--- a/src/main/java/microservice/commerce/demo/controller/ControllerCommerce.java	(revision a61cf33fa1b1aec49ebde1a2b60c0d81d818de44)
++++ b/src/main/java/microservice/commerce/demo/controller/ControllerCommerce.java	(date 1612982550042)
+@@ -1,12 +1,19 @@
+ package microservice.commerce.demo.controller;
+ 
++import microservice.commerce.demo.ClientDAO;
+ import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.stereotype.Controller;
+ import org.springframework.web.bind.annotation.GetMapping;
+ 
++@Controller
+ public class ControllerCommerce {
+ 
+     @Autowired
+-    private ControllerCommerce controllercommerce;
++    private ClientDAO clientdao;
+ 
++    @GetMapping("/index")
++    public String afficher(){
++        return "index";
++    }
+ 
+ }
+Index: src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1252
+===================================================================
+diff --git a/src/main/resources/application.properties b/src/main/resources/application.properties
+--- a/src/main/resources/application.properties	(revision a61cf33fa1b1aec49ebde1a2b60c0d81d818de44)
++++ b/src/main/resources/application.properties	(date 1612982168346)
+@@ -1,1 +1,11 @@
++server.port=8081
++
++spring.jpa.show-sql=true
++spring.h2.console.enabled=true
+ 
++spring.datasource.url=jdbc:h2:mem:testdb
++spring.datasource.driver-class-name=org.h2.Driver
++spring.datasource.username=admin
++spring.datasource.password=
++
++spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+Index: src/main/java/microservice/commerce/demo/ClientDAO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/microservice/commerce/demo/ClientDAO.java b/src/main/java/microservice/commerce/demo/ClientDAO.java
+deleted file mode 100644
+--- a/src/main/java/microservice/commerce/demo/ClientDAO.java	(revision a61cf33fa1b1aec49ebde1a2b60c0d81d818de44)
++++ /dev/null	(revision a61cf33fa1b1aec49ebde1a2b60c0d81d818de44)
+@@ -1,8 +0,0 @@
+-package microservice.commerce.demo;
+-
+-import org.springframework.data.jpa.repository.JpaRepository;
+-
+-public interface ClientDAO extends JpaRepository<Client, Integer> {
+-
+-
+-}
